@@ -8,8 +8,9 @@ for NAME in $GROUPNAMES
 		if [[ $GROUPNAME == $NAME ]]
 			then
 			echo  "Yup , $GROUPNAME is there "
-			exit
+			exit 1
 		fi
 	done
 	
 echo "YAY , There no groupe with that name '$GROUPNAME'"			
+exit 2
